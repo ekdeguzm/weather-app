@@ -6,7 +6,9 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: #222;
-  background-image: url(https://source.unsplash.com/random/1600x900/daily?nature,city);}
+  background-image: url(https://source.unsplash.com/random/1600x900/daily?nature,city);
+  font-size: 120%;
+}
 
 .card {
   background: #000000d0;
