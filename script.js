@@ -21,6 +21,8 @@ let weather = {
     + icon
     + ".png"
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°"
+    document.querySelector(".temp").innerText = temp + "°C"
+    document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%"
+    document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h"
   }
 };
