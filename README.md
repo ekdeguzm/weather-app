@@ -1,5 +1,6 @@
 # Weather Application
 
+<<<<<<< HEAD
 This application accesses the OpenWeatherMap API in JavaScript to create a website that displays the current weather for any location.
 
 
@@ -41,3 +42,13 @@ This application accesses the OpenWeatherMap API in JavaScript to create a websi
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+=======
+
+
+## HTML code
+
+## CSS code
+
+
+## Javascript code
+>>>>>>> 0f1c3c84ea79b91f8860a5491746fd7cb1329316
