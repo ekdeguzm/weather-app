@@ -21,18 +21,18 @@ This application accesses the OpenWeatherMap API in JavaScript to create a websi
 
 ## Outcome
 
-* Used HTML5 **tables** and associated features
-* Used CSS3 add borders to draw attention to planets.
-* Used **Git** and **GitHub** for project management.
-* Tried to maintain **clean code**.
-* **Cross tested** on Firefox and Chromium based browsers.
+* Used the fonts.google.apis to draw fonts for the website
+* Used CSS3 load background images that correlate with the city searched
+* Utilized JavaScript to draw weather data from the OpenWeatherMap API
+* Used **Git** and **GitHub** for project management
+* Maintained **clean code**
+* **Cross tested** on Firefox and Chromium based browsers
 
 ## Summary
 
 ### What I learned
 
-* How to create content rows and columns inside a table body
-* Envisioning a design and executing it based on an example
+* How to access an API using JS 
 
 ## Author
 
