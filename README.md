@@ -1,7 +1,8 @@
 # Weather Application
 
-This application accesses the OpenWeatherMap API in JavaScript to create a website that displays the current weather for any location.
+<img width="1280" alt="Screen Shot 2022-08-07 at 11 35 30 PM" src="https://user-images.githubusercontent.com/35510088/183354591-f38f0981-b0e0-4e4f-b22d-9742f262daab.png">
 
+This application accesses the OpenWeatherMap API in JavaScript to create a website that displays the current weather for any location.
 
 🔗 **Live preview:** [here](https://ekdeguzm.github.io/weather-app/)
 
