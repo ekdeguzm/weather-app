@@ -12,20 +12,21 @@ let weather = {
   },
   displayWeather: function(data) {
     const { name } = data;
-    const { icon, description } = data.weather[0]
+    const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    console.log(name,icon,description,temp,humidity,speed);
+    const currentTime = new Date().toLocaleTimeString();
+
+    console.log(name, icon, description, temp, humidity, speed, currentTime);
     document.querySelector(".city").innerText = "Weather in " + name;
-    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"
-    + icon
-    + ".png"
+    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C"
-    document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%"
-    document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h"
+    document.querySelector(".temp").innerText = temp + "°C";
+    document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+    document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
+    document.querySelector(".time").innerText = currentTime; // Display current time
     document.querySelector(".weather").classList.remove("loading");
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1600x900/?" + name + ",city')"
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1600x900/?" + name + ",city')";
   },
   search: function() {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -36,11 +37,10 @@ document.querySelector(".search button").addEventListener("click", function() {
   weather.search();
 });
 
-document.querySelector(".search-bar").addEventListener("keyup", function (event) {
-  if (event.key == "Enter") {
+document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
     weather.search();
-
   }
 });
 
-weather.fetchWeather("New York City")
+weather.fetchWeather("New York City");
