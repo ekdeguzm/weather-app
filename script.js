@@ -18,8 +18,10 @@ let weather = {
     const timezone = data.timezone; // Get the timezone offset in seconds
     // Get the current timestamp in milliseconds
     const currentTimeStamp = Date.now();
+    console.log(timezone + "timezone")
+    console.log(currentTimeStamp + "currentTimeStamp")
     // Calculate the adjusted timestamp based on the timezone offset
-    const adjustedTimeStamp = currentTimeStamp + timezone * 1000;
+    const adjustedTimeStamp = currentTimeStamp + (timezone * 1000);
     // Create a new Date object using the adjusted timestamp
     const currentTime = new Date(adjustedTimeStamp).toLocaleTimeString();
 
