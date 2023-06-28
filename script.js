@@ -15,7 +15,13 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    const currentTime = new Date().toLocaleTimeString();
+    const timezone = data.timezone; // Get the timezone offset in seconds
+    // Get the current timestamp in milliseconds
+    const currentTimeStamp = Date.now();
+    // Calculate the adjusted timestamp based on the timezone offset
+    const adjustedTimeStamp = currentTimeStamp + timezone * 1000;
+    // Create a new Date object using the adjusted timestamp
+    const currentTime = new Date(adjustedTimeStamp).toLocaleTimeString();
 
     console.log(name, icon, description, temp, humidity, speed, currentTime);
     document.querySelector(".city").innerText = "Weather in " + name;
@@ -43,4 +49,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
   }
 });
 
-weather.fetchWeather("New York City");
+weather.fetchWeather("New York");
